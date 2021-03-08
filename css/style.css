@@ -1,0 +1,316 @@
+/*==================================
+
+   Template Name: MINIMO
+   Author: Md Asaduzzaman
+   Version: 1.0.0
+   Created: 23Feb 21
+   File description: Main css file of the template
+
+   font-family: 'Inconsolata', monospace;
+   font-family: 'Playfair Display', serif;
+   font-family: 'Ubuntu', sans-serif;
+
+
+
+====================================*/
+
+/*==================================
+
+01. General
+
+====================================*/
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Playfair+Display&family=Ubuntu:wght@300&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #626262;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: 30px;
+    color: #626262;
+    margin: 0;
+}
+
+P{
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #626262;
+    margin: 0;
+}
+a{
+    color: #626262;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+
+/*==================================
+Header style start here
+====================================*/
+header{
+    padding: 70px 0;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.logo{
+    width: 30%;
+    float: left;
+}
+.menu{
+    width: 70%;
+    float: right;
+}
+nav ul{
+    list-style: none;
+    float: right;
+    margin: 0;
+}
+nav ul li{
+    float: left;
+}
+nav ul li a{
+    padding: 0 60px;
+}
+nav ul li:last-child a{
+    padding-right: 0;
+}
+nav ul li a:hover{
+    color: #000;
+}
+.logo a{
+    font-family: 'Inconsolata', monospace;
+    font-weight: 400;
+    font-size: 30px;
+    color: #000;
+    letter-spacing: 5px;
+}
+
+
+
+/*==================================
+banner style start here
+====================================*/
+.banner{
+    background-image: url(../images/ban.jpg);
+    min-height: 700px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*==================================
+blog style start here
+====================================*/
+
+#blog{
+    padding: 95px 0;
+}
+.blog-container{
+    width: 70%;
+    
+    margin: 0 auto;
+}
+.categories h4{
+    padding: 15px 0;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 14px;
+    
+}
+.title h2{
+    padding: 15px 0;
+}
+.content p{
+    padding: 15px 0 20px;
+    line-height: 25px;
+
+}
+
+/*==================================
+blog-thumbnail style start here
+====================================*/
+#blog-thumbnail{
+    padding: 70px 0;
+}
+.blog-wrapper{
+    overflow: hidden;
+
+}
+.blog-left{
+    width: 45%;
+    float: left;
+    
+
+}
+.blog-right{
+    width: 45%;
+    float: right;
+    
+
+}
+.thumbnail img{
+    width: 100%;
+}
+.blog-left .categories h4{
+    padding: 10px 0;
+}
+.blog-left .title h2{
+    padding: 10px 0 25px;
+}
+.blog-left .content p{
+    padding: 0;
+}
+.blog-right .categories h4{
+    padding: 10px 0;
+}
+.blog-right .title h2{
+    padding: 10px 0 25px;
+}
+.blog-right .content p{
+    padding: 0;
+}
+
+/*==================================
+newsletter style start here
+====================================*/
+#newsletter{
+    background-color: #f0f0f0;
+    padding: 70px 0;
+    text-align: center;
+}
+.newsletter-title h2{
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 40px;
+    color: #333;
+    padding-bottom: 50px;
+}
+.newsletter-form{
+    width: 30%;
+    margin: 0 auto;
+    position: relative;
+}
+.newsletter-form input{
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid black;
+    width: 100%;
+    padding: 15px 0;
+}
+.newsletter-form input:focus{
+    outline: none;
+    transition: .3s;
+    border-bottom: 1px solid #626262;
+    
+}
+.newsletter-form input::placeholder{
+    text-transform: capitalize;
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    color: #626262;
+    font-size: 14px;
+
+}
+.submit-button{
+    position: absolute;
+    top: -1px;
+    right: 0;
+}
+button{
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    padding: 0;
+    transform: translate(15px, 15px);
+}
+button:focus{
+    outline: none;
+}
+
+/*==================================
+footer style start here
+====================================*/
+footer{
+    background-color: #f0f0f0;
+    padding: 40px 0;
+}
+.footer-item{
+    overflow: hidden;
+}
+.footer-menu{
+    width: 50%;
+    float: left;
+}
+.footer-menu ul{
+ margin: 0;
+ padding: 0;   
+}
+.footer-menu ul li{
+    list-style: none;
+    display: inline-block;
+}
+.footer-menu ul li a{
+    font-size: 14px;
+    color: black;
+    text-transform: capitalize;
+    padding: 0 10px;
+}
+.footer-menu ul li:first-child a{
+   padding-left: 0;
+}
+.social{
+    width: 50%;
+    float: right;
+}
+.social ul{
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+.social ul li{
+    list-style: none;
+    display: inline-block;
+}
+.social ul li a{
+    font-size: 14px;
+    color: black;
+    text-transform: capitalize;
+    padding: 0 10px;
+}
+.social ul li:last-child a{
+    padding-right: 0;
+ }
+
+
+ .flex-container{
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+ }
+ .flex-child{
+     height: 100px;
+     width: 100px;
+     line-height: 100px;
+     background-color: #ddd;
+     margin: 10px;
+     text-align: center;
+ }
